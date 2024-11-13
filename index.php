@@ -42,7 +42,7 @@
             curl_close($request);
             if ($response) {
                 $data = json_decode($response, false);
-
+                
                 if (isset($data->main->temp)) {
                     $temp = $data->main->temp;
                     $description = $data->weather[0]->description;
