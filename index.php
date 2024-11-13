@@ -40,7 +40,6 @@
             curl_setopt($request, CURLOPT_RETURNTRANSFER, true);
             $response = curl_exec($request);
             curl_close($request);
-
             if ($response) {
                 $data = json_decode($response, false);
 
